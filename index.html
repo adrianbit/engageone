@@ -486,7 +486,7 @@
 
 		// EngageOne Video Environment (Prod vs. Pre-prod)
 		//var host = 'prod.rtcvid.net';
-		var host = '209.58.140.170';
+		var host = 'preprod.rtcvid.net';
 
 		// Security Key settings. Must be same as set in project settings on server side.
 		// TODO pass algorithm arg to createAuthenticationString()
@@ -499,7 +499,7 @@
 		var urlEncodedKey = encodeURIComponent(key);
 
 		var iframe = document.getElementById('videoPlayerIframe');
-		iframe.src = 'http://' + host + '/' + projectName + '/videoPlayer.php?uid=' + uid
+		iframe.src = 'https://' + host + '/' + projectName + '/videoPlayer.php?uid=' + uid
 			+ '&key=' + urlEncodedKey + '&ts=' + timestamp;
 	}
 	</script>
